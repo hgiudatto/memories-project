@@ -44,11 +44,14 @@ const Post = ({ post }) => {
         </Typography>
       </CardContent>
       <CardActions className={classes.cardActions}>
-        <Button style={{ color: "white" }} size="small" onClick={() => {}}>
-          <MoreHorizIcon fontSize="default" />
+        <Button size="small" color="primary" onClick={() => {}}>
+          <ThumbUpAltIcon fontSize="small" />
+          Like
+          {post.likeCount}
         </Button>
-        <Button style={{ color: "white" }} size="small" onClick={() => {}}>
-          <MoreHorizIcon fontSize="default" />
+        <Button size="small" color="primary" onClick={() => {}}>
+          <DeleteIcon fontSize="small" />
+          Delete
         </Button>
       </CardActions>
     </Card>
